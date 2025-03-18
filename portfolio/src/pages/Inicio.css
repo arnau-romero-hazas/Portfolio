@@ -1,0 +1,13 @@
+.inicio {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0051f2;
+  }
+  
+  .inicio .contenido {
+    padding: 20px;
+  }
+  

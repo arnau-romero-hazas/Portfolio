@@ -1,3 +1,5 @@
+import "./ProjectCard.css";
+
 export default function ProjectCard({ title, description, imageUrl }) {
     return (
       <div className="ProjectCard">

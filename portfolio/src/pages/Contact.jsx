@@ -1,3 +1,5 @@
+import "./Contact.css";
+
 export default function Contact() {
     return (
       <section id="contacto" className="py-20 bg-gray-100">

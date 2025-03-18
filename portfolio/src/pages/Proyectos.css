@@ -1,0 +1,12 @@
+.proyectos {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #094acd;
+  }
+  
+  .proyectos .contenido {
+    padding: 20px;
+  }
