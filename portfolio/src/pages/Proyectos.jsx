@@ -10,25 +10,25 @@ export default function Proyectos() {
         
         <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-6">
           <div className="ProjectoSocial">
-          <ProjectCard title="Sots Social" description="Creacion de una red social, (WIP)" imageUrl="/logoAppSotsSocial (1).jpg" />
+          <ProjectCard title="Sots Social" description="Creacion de una red social, (WIP)" imageUrl={`${import.meta.env.BASE_URL}logoAppSotsSocial.jpg`}/>
           <a href="https://github.com/arnau-romero-hazas/isdi-bootcamp-202501/tree/feature/product/staff/arnau-romero" target="_blank" rel="noopener noreferrer">
           <FaGithub size={30} /> 
           </a>
           </div>
            <div className="ProjectoNumero">
-          <ProjectCard title="GuesTheNumber" description="Juego de adivinar un numeros" imageUrl="/adivinarNumero (1).jpg" />
+          <ProjectCard title="GuesTheNumber" description="Juego de adivinar un numeros" imageUrl={`${import.meta.env.BASE_URL}adivinarNumero.jpg`} />
           <a href="https://github.com/arnau-romero-hazas/isdi-bootcamp-202501/tree/feature/playground/staff/arnau-romero" target="_blank" rel="noopener noreferrer">
           <FaGithub size={30} /> 
           </a>
           </div>
           <div className="ProjectoRockPaperScissors">
-          <ProjectCard title="RockPaperScissors" description="Juego de piedra papel tijeras" imageUrl="/piedraPapelTijera (1).jpg" />
+          <ProjectCard title="RockPaperScissors" description="Juego de piedra papel tijeras" imageUrl={`${import.meta.env.BASE_URL}piedraPapelTijera.jpg`} />
           <a href="https://github.com/arnau-romero-hazas/isdi-bootcamp-202501/tree/feature/playground/staff/arnau-romero" target="_blank" rel="noopener noreferrer">
           <FaGithub size={30} />
           </a>
           </div>
           <div className="ProjectoTicTacToe">
-          <ProjectCard title="TicTacTOE" description="Juego de tres en raya" imageUrl="/tresEnRaya.jpg" />
+          <ProjectCard title="TicTacTOE" description="Juego de tres en raya" imageUrl={`${import.meta.env.BASE_URL}tresEnRaya.jpg`} />
           <a href="https://github.com/arnau-romero-hazas/isdi-bootcamp-202501/tree/feature/playground/staff/arnau-romero" target="_blank" rel="noopener noreferrer">
           <FaGithub size={30} />
           </a>
