@@ -4,10 +4,25 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #0051f2;
+    background-image: url("../../public/pexels-photo-325185.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
   }
   
   .inicio .contenido {
     padding: 20px;
   }
   
+  .Nombre{
+    position: relative;
+    top: -150px;
+    color: #8bafe0b1 ;
+  }
+
+  .Curro{
+    position: relative;
+    top: 200px;
+    color: #8bafe0b1 ;
+  }

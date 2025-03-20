@@ -1,21 +1,21 @@
-.header {
-    background-color: #1f2937;
-    color: rgb(246, 12, 12) ;
-    padding: 1rem;
-    width: 40px;
+ .barraNavegacion {
+    background-color: #8bafe0b1;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
     top: 0;
     z-index: 50;
     position:fixed;
   }
 
-  .elementosHeader {
+  /* .elementosHeader {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 0;
-}
-  .nav {
+} */
+  /* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,5 +33,43 @@
   
   .nav a:hover {
     color: #9ca3af;
-  }
-  
+  } */
+
+  /* 🔹 Estilos del menú de navegación */
+.elementosHeader {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  gap: 25px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* 🔹 Links con efecto de hover */
+.elementosHeader a {
+  position: relative;
+  color: white;
+   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.elementosHeader a:hover {
+  color: #60a5fa;
+}
+
+/* 🔥 Efecto subrayado animado en hover */
+.elementosHeader a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #60a5fa;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.elementosHeader a:hover::after {
+  width: 100%;
+}

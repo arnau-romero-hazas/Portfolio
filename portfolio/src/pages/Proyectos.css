@@ -1,12 +1,37 @@
 .proyectos {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Asegura que el título y los proyectos estén en columna */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #212327;
+  padding: 40px 20px;
+}
+
+.contenido {
+  width: 100%;
+  max-width: 1200px; /* Evita que el contenido sea demasiado ancho */
+}
+
+.grid {
+  width: 100%; /* Asegura que la cuadrícula ocupe el ancho disponible */
+  display: grid;
+  gap: 20px; /* Espacio entre las cards */
+}
+
+
+/* .proyectos {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #094acd;
+    background-color: #757f94;
   }
   
-  .proyectos .contenido {
+  .contenido .proyectos {
     padding: 20px;
-  }
+    display: flex;
+    justify-content: center;
+  } */

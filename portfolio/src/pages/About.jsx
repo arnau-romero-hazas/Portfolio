@@ -3,12 +3,21 @@ import "./About.css";
 export default function About() {
     return (
       <section id="sobre-mi" className="py-20">
-        <div className="containerAbout">
-          <h2 className="text-3xl font-bold text-center mb-8">Sobre Mí</h2>
-          <p className="text-center max-w-2xl mx-auto">
-            ¡Hola! Soy un desarrollador Full-Stack con experiencia en tecnologías como JavaScript, React, Node.js y más.
-            Me apasiona crear soluciones innovadoras y escalables.
+        <div className="about">
+          <h2 className="headerAbout">Sobre Mí</h2>
+          <div className="textoAbout">
+          <p className="textoAbout2">
+                                                                         <h3> 🚀 En busca de mi primera oportunidad en el mundo tech 🧑‍💻</h3>
+                                                                         Actualmente, estoy finalizando un bootcamp de desarrollo Full Stack en ISDI Coders, donde he consolidado mis conocimientos en JavaScript, React, Node.js, Express y MongoDB, además de aplicar principios como SOLID, testing con Jest, control de versiones con Git y metodologías ágiles (SCRUM).
+
+Estoy buscando mi primera oportunidad laboral, abierto a contratos de prácticas, porque ahora mismo priorizo la experiencia por encima del salario. Mi objetivo es integrarme en un equipo donde pueda seguir aprendiendo y dar lo mejor de mí para aportar el máximo valor posible.
+
+Vengo del mundo de la automatización industrial y la robótica, lo que me ha dado una gran capacidad para resolver problemas, trabajar en equipo y adaptarme a entornos dinámicos. Además, estoy acostumbrado a proyectos de alto nivel técnico, lo que me permite tener una mentalidad analítica y orientada a la eficiencia.
+
+Tengo una gran predisposición a trabajar duro, aprender rápido y enfrentar cualquier reto con la mejor actitud.
+ Si buscas a alguien con ganas de crecer, mejorar y aportar al equipo desde el primer día, ¡hablemos! 🚀
           </p>
+          </div>
         </div>
       </section>
     );
