@@ -1,17 +1,17 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, User, Code, Briefcase, GraduationCap } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, User, Code, Briefcase, GraduationCap, Download } from 'lucide-react';
 import { useLanguage } from './contexts/LanguageContext';
-import { LanguageSelector } from './components/LanguageSelector';
+import { Navbar } from './components/Navbar';
 
 function App() {
   const { t } = useLanguage();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      <LanguageSelector />
+      <Navbar />
       
       {/* Hero Section */}
-      <header className="container mx-auto px-6 py-16 md:py-32">
+      <header className="container mx-auto px-6 pt-24 pb-16 md:pt-32 md:pb-32">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
             {t('hero.title')}
@@ -19,25 +19,14 @@ function App() {
           <p className="text-xl md:text-2xl text-gray-300 mb-8">
             {t('hero.subtitle')}
           </p>
-          <div className="flex gap-4">
-            <a href="https://github.com/arnau-romero-hazas" target="_blank" rel="noopener noreferrer" 
-               className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
-              <Github className="w-6 h-6" />
-            </a>
-            <a href="https://www.linkedin.com/in/arnau-romero-hazas-0128b0200/" target="_blank" rel="noopener noreferrer"
-               className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
-              <Linkedin className="w-6 h-6" />
-            </a>
-            <a href="aromerohazas@gmail.com"
-               className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
-              <Mail className="w-6 h-6" />
-            </a>
-          </div>
+          <p className="text-xl md:text-2xl text-gray-300 mb-8">
+            {t('hero.name')}
+          </p>
         </div>
       </header>
 
       {/* About Section */}
-      <section className="bg-gray-800 py-20">
+      <section id="about" className="bg-gray-800 py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-2 mb-8">
@@ -63,6 +52,13 @@ function App() {
                   <GraduationCap className="w-5 h-5 text-purple-400" />
                   <span>{t('about.education')}</span>
                 </div>
+                <a 
+                  href="/CVArnauRomeroHazas.pdf" 
+                  download="Arnau_Romero_Hazas_CV.pdf"
+                  className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-800 text-gray-300 px-3 py-3 rounded-lg transition-colors mt-4">
+                  <Download className="w-5 h-5" />
+                  {t('CV')}
+                </a>
               </div>
             </div>
           </div>
@@ -70,7 +66,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section className="py-20">
+      <section id="projects" className="py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center gap-2 mb-12">
@@ -109,20 +105,28 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-gray-800 py-20">
+      <section id="contact" className="bg-gray-800 py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-8">{t('contact.title')}</h2>
             <p className="text-gray-300 mb-8">
               {t('contact.description')}
             </p>
-            <a 
-              href="mailto:aromerohazas@gmail.com"
-              className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors"
-            >
-              <Mail className="w-5 h-5" />
-              {t('contact.button')}
-            </a>
+            <div className="flex gap-4 justify-center">
+              <a href="https://github.com/arnau-romero-hazas" target="_blank" rel="noopener noreferrer" 
+                className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
+                <Github className="w-6 h-6" />
+              </a>
+              <a href="https://www.linkedin.com/in/arnau-romero-hazas-0128b0200/" target="_blank" rel="noopener noreferrer"
+                className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
+                <Linkedin className="w-6 h-6" />
+              </a>
+              <a 
+                href="mailto:aromerohazas@gmail.com"
+                className="p-2 rounded-full bg-gray-700 hover:bg-gray-600 transition-colors">
+                <Mail className="w-6 h-6" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
