@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, User, Code, Briefcase, GraduationCap, Download } from 'lucide-react';
 import { useLanguage } from './contexts/LanguageContext';
-import { Navbar } from './components/Navbar';
+import { Navbar } from './components/NavBar';
 
 function App() {
   const { t } = useLanguage();
